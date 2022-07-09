@@ -1,4 +1,4 @@
-package locators;
+package basiccomponents;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -21,7 +21,7 @@ System.setProperty("webdriver.chrome.driver", "F:\\Desktop\\Katraj\\23 April\\Se
 		WebElement username = driver.findElement(By.xpath("//input[@id='txtUsername']"));
 		
 		
-		username.sendKeys("Admin");
+		username.sendKeys("Adminn");
 		
 		
 		WebElement pwd = driver.findElement(By.xpath("//input[@name='txtPassword']"));
@@ -35,14 +35,25 @@ System.setProperty("webdriver.chrome.driver", "F:\\Desktop\\Katraj\\23 April\\Se
 	
 		loginbutton.click();
 		
-		driver.findElement(By.xpath("//*[@id=\"ohrmList_chkSelectRecord_10\"]")).click();
 		
-//		driver.findElement(By.xpath("//input[@id='ohrmList_chkSelectRecord_48']")).click();
+		WebElement message = driver.findElement(By.xpath("//*[@id='spanMessage']"));
 		
-	for(int i=1; i<40; i++)
+	
+	String msg = message.getText();
+	
+	System.out.println(msg);
+	
+	String expectedmessage = "Invalid Credentials";
+	
+	if(expectedmessage.equals(msg))
 	{
-		driver.findElement(By.xpath("(//input[contains(@id,'ohrmList_chkSelectRecord_')])["+i+"]")).click();
+		System.out.println("Test case pass");
 	}
+	else
+	{
+		System.out.println("Test case fail please file the bug");
+	}
+		
 		
 	}
 }
