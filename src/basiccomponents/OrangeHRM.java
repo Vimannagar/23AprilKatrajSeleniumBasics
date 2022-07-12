@@ -59,7 +59,7 @@ System.setProperty("webdriver.chrome.driver", "F:\\Desktop\\Katraj\\23 April\\Se
 	}
 	
 	
-	ScreenShot.captureScreenShot(driver);
+	ScreenShot.captureScreenShot(driver, "scr2");
 		
 		
 	}

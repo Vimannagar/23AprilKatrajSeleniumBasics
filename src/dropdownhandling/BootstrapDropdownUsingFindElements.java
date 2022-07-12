@@ -23,16 +23,22 @@ public class BootstrapDropdownUsingFindElements {
 		
 		driver.findElement(By.xpath("//*[@class='onetrust-close-btn-handler onetrust-close-btn-ui banner-close-button ot-close-icon']")).click();
 	
-		driver.findElement(By.xpath("//*[@id='select-2']")).click();
+		driver.findElement(By.xpath("//*[@id='select-0']")).click();
 		
 		
-		List<WebElement> years = driver.findElements(By.xpath("//*[contains(@id,'select-item-select-2-')]"));
+		List<WebElement> months = driver.findElements(By.xpath("//*[contains(@id,'select-item-select-0-')]"));
 		
-		for(WebElement year:years)
+		for(WebElement month:months)
 		{
-			String yeartext = year.getText();
+			String monthtext = month.getText();
 			
-			System.out.println(yeartext);
+			System.out.println(monthtext);
+			
+			if(monthtext.equals("Dec"))
+			{
+				month.click();
+				break;
+			}
 		}
 		
 		

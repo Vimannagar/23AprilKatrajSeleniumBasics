@@ -13,14 +13,15 @@ import org.openqa.selenium.io.FileHandler;
 
 public class ScreenShot {
 	
-	public static void captureScreenShot(WebDriver driver) throws IOException
+	public static void captureScreenShot(WebDriver driver, String filename) throws IOException
 	{
 		TakesScreenshot ts = (TakesScreenshot)driver;
 		
 		 File source = ts.getScreenshotAs(OutputType.FILE);
 		 
-		 String path = "F:\\Desktop\\Katraj\\23 April\\Selenium Docs\\captured Screenshot\\orangelogin1.png";
+//		 String path = "F:\\Desktop\\VimanNagar\\May 21\\23AprSeleniumBasics\\screenshots\\"+filename+".png";
 		
+		String path = System.getProperty("user.dir")+"\\screenshots\\"+filename+".png";		 
 		File destination = new File(path);
 		
 		FileHandler.copy(source, destination);
