@@ -29,8 +29,7 @@ public class KeyboardActions {
 		Actions act = new Actions(driver);
 		
 		act.sendKeys(firstname, "Velocity").sendKeys(Keys.TAB).sendKeys("Corporate").build().perform();
-		
-		
+				
 		act.sendKeys(Keys.TAB).sendKeys("9876543210").sendKeys(Keys.TAB).sendKeys("abc123").build().perform();
 
 		ScreenShot.captureScreenShot(driver, "fbsignup");
