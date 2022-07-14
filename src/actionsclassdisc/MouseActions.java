@@ -32,13 +32,17 @@ System.setProperty("webdriver.chrome.driver", "F:\\Desktop\\Katraj\\23 April\\Se
 		
 		WebElement googlelink = driver.findElement(By.xpath("//*[@id='link2']"));
 		
-		googlelink.click();
+//		googlelink.click();
+		
+		
+//		Right click operation:
+		
 		
 		
 		
 //		WAP to perform the hover and click operation on Admin tab of OrangeHRM
 		
-		
+		act.contextClick(hoverelement).perform();
 		
 	}
 
