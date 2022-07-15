@@ -41,6 +41,13 @@ System.setProperty("webdriver.chrome.driver", "F:\\Desktop\\Katraj\\23 April\\Se
 		
 		act.scrollToElement(hideelementlink).perform();
 		
+		
+		
+//		WAP to perform the scrolling using scrollByAmount method
+		
+		
+		
+	
 	
 	
 	}

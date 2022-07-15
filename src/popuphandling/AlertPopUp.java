@@ -24,7 +24,25 @@ public class AlertPopUp {
 		
 		Thread.sleep(2000);
 //		Handling the alert pop up by clicking on ok button
+		
+		String textonalert = driver.switchTo().alert().getText();
+		
+		System.out.println(textonalert);
+		
+		
 		driver.switchTo().alert().accept();
+		
+		WebElement confirmationbox = driver.findElement(By.xpath("//*[@name='confirmation']"));
+		confirmationbox.click();
+		
+		String textonconfirmationalert = driver.switchTo().alert().getText();
+		
+		System.out.println(textonconfirmationalert);
+		
+		
+		driver.switchTo().alert().dismiss();
+		
+		
 		
 		
 	}
