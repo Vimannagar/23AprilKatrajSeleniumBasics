@@ -3,6 +3,7 @@ package utility;
 import java.util.List;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -27,22 +28,12 @@ public class ClickUsingJS {
 			
 			Thread.sleep(3000);
 			
-			driver.findElement(By.xpath("//*[@id='select-item-select-0-6']")).click();
-//			List<WebElement> months = driver.findElements(By.xpath("//*[contains(@id,'select-item-select-0-')]"));
-//			
-//			for(WebElement month:months)
-//			{
-//				String monthtext = month.getText();
-//				
-//				System.out.println(monthtext);
-//				
-//				if(monthtext.equals("Dec"))
-//				{
-//					month.click();
-//					break;
-//				}
-//			}
+			WebElement julymonth = driver.findElement(By.xpath("//*[@id='select-item-select-0-6']"));
+		
+			JavascriptExecutor js = (JavascriptExecutor)driver;
 			
+			
+			js.executeScript("arguments[0].click();", julymonth);
 			
 			
 //		}
