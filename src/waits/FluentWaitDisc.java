@@ -3,6 +3,7 @@ package waits;
 import java.time.Duration;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -30,13 +31,18 @@ public class FluentWaitDisc {
 //	using fluent wait:
 	
 	
-	FluentWait<WebDriver> wait = new FluentWait<WebDriver>(driver).withTimeout(Duration.ofSeconds(60)).pollingEvery(Duration.ofSeconds(9));
+	FluentWait<WebDriver> wait = new FluentWait<WebDriver>(driver)
+								.withTimeout(Duration.ofSeconds(60))
+								.pollingEvery(Duration.ofMillis(9))
+								.ignoring(NoSuchElementException.class);
 	
 	
 	
 	wait.until(ExpectedConditions.elementToBeClickable(disablebutton));
 	
 	driver.findElement(By.xpath("//*[@id='enable-button']")).click();
+	
+	
 	
 	
 	
