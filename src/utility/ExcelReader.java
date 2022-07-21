@@ -3,6 +3,7 @@ package utility;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
 import java.io.IOException;
 
 import org.apache.poi.ss.usermodel.DataFormatter;
@@ -11,8 +12,28 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 public class ExcelReader {
 	
-	public void writeData(int row, int column)
+	public void writeData() throws IOException
 	{
+		File src = new File("F:\\Desktop\\Katraj\\23 April\\Testdata.xlsx");
+		
+//		To load that particular location
+		
+		FileInputStream fis = new FileInputStream(src);
+		
+		XSSFWorkbook wb = new XSSFWorkbook(fis);
+		
+		XSSFSheet sh1 = wb.getSheet("Sheet1");
+		
+		File fout = new File("F:\\Desktop\\Katraj\\23 April\\Testdata.xlsx");
+		
+		FileOutputStream fos = new FileOutputStream(fout);
+		
+		sh1.getRow(6).getCell(1).setCellValue("test value");
+		
+		sh1.createRow(50).createCell(3).setCellValue("create row and column test");
+		
+		wb.write(fos);
+		
 		
 	}
 	
@@ -81,7 +102,7 @@ public class ExcelReader {
 	
 		System.out.println(intvalue2);
 		
-		
+		er.writeData();
 		
 		
 		
@@ -89,8 +110,13 @@ public class ExcelReader {
 	}
 	
 	
+	
+	
 //	WAP to login into Orange HRM using excel sheet data
 //	WAP to print all the values present inside the excel sheet with row and column
+	
+	
+	
 	
 
 }
