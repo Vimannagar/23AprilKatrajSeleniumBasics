@@ -13,8 +13,12 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 public class ExcelReader {
 	
 	public void writeData() throws IOException
+	
+	
 	{
-		File src = new File("F:\\Desktop\\Katraj\\23 April\\Testdata.xlsx");
+		String path = System.getProperty("user.dir")+"\\Testdata.xlsx";
+		
+		File src = new File(path);
 		
 //		To load that particular location
 		
@@ -24,17 +28,16 @@ public class ExcelReader {
 		
 		XSSFSheet sh1 = wb.getSheet("Sheet1");
 		
-		File fout = new File("F:\\Desktop\\Katraj\\23 April\\Testdata.xlsx");
+		File fout = new File(path);
 		
 		FileOutputStream fos = new FileOutputStream(fout);
 		
-		sh1.getRow(6).getCell(1).setCellValue("test value");
+		sh1.getRow(7).getCell(1).setCellValue("test value");
 		
-		sh1.createRow(50).createCell(3).setCellValue("create row and column test");
+		sh1.createRow(105).createCell(5).setCellValue("create row and column test");
 		
 		wb.write(fos);
-		
-		
+			
 	}
 	
 	
