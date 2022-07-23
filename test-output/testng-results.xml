@@ -2,28 +2,30 @@
 <testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-07-22T08:55:46 IST" name="Default suite" finished-at="2022-07-22T08:55:46 IST" duration-ms="147">
+  <suite started-at="2022-07-23T20:04:54 IST" name="Suite" finished-at="2022-07-23T20:04:54 IST" duration-ms="173">
     <groups>
     </groups>
-    <test started-at="2022-07-22T08:55:46 IST" name="Default test" finished-at="2022-07-22T08:55:46 IST" duration-ms="147">
-      <class name="testngdiscussion.Priority">
-        <test-method signature="login()[pri:1, instance:testngdiscussion.Priority@d5b810e]" started-at="2022-07-22T08:55:46 IST" name="login" finished-at="2022-07-22T08:55:46 IST" duration-ms="18" status="PASS">
+    <test started-at="2022-07-23T20:04:54 IST" name="Test" finished-at="2022-07-23T20:04:54 IST" duration-ms="173">
+      <class name="testngdiscussion.DashBoardTest">
+        <test-method signature="adminTab()[pri:0, instance:testngdiscussion.DashBoardTest@4dbb42b7]" started-at="2022-07-23T20:04:54 IST" name="adminTab" finished-at="2022-07-23T20:04:54 IST" duration-ms="9" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- login -->
-        <test-method signature="home()[pri:2, instance:testngdiscussion.Priority@d5b810e]" started-at="2022-07-22T08:55:46 IST" name="home" finished-at="2022-07-22T08:55:46 IST" duration-ms="5" status="PASS">
+        </test-method> <!-- adminTab -->
+        <test-method signature="profileTab()[pri:0, instance:testngdiscussion.DashBoardTest@4dbb42b7]" started-at="2022-07-23T20:04:54 IST" name="profileTab" finished-at="2022-07-23T20:04:54 IST" duration-ms="8" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- home -->
-        <test-method signature="dashBoard()[pri:3, instance:testngdiscussion.Priority@d5b810e]" started-at="2022-07-22T08:55:46 IST" name="dashBoard" finished-at="2022-07-22T08:55:46 IST" duration-ms="5" status="PASS">
+        </test-method> <!-- profileTab -->
+      </class> <!-- testngdiscussion.DashBoardTest -->
+      <class name="testngdiscussion.LoginTest">
+        <test-method signature="loginWithCorrectCreds()[pri:0, instance:testngdiscussion.LoginTest@d5b810e]" started-at="2022-07-23T20:04:54 IST" name="loginWithCorrectCreds" finished-at="2022-07-23T20:04:54 IST" duration-ms="20" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- dashBoard -->
-        <test-method signature="logout()[pri:1000, instance:testngdiscussion.Priority@d5b810e]" started-at="2022-07-22T08:55:46 IST" name="logout" finished-at="2022-07-22T08:55:46 IST" duration-ms="8" status="PASS">
+        </test-method> <!-- loginWithCorrectCreds -->
+        <test-method signature="verifyTitle()[pri:0, instance:testngdiscussion.LoginTest@d5b810e]" started-at="2022-07-23T20:04:54 IST" name="verifyTitle" finished-at="2022-07-23T20:04:54 IST" duration-ms="5" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- logout -->
-      </class> <!-- testngdiscussion.Priority -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- verifyTitle -->
+      </class> <!-- testngdiscussion.LoginTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

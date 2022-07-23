@@ -1,40 +1,32 @@
 package testngdiscussion;
 
+import org.testng.Reporter;
 import org.testng.annotations.Test;
 
-public class Priority {
-	
-	@Test(priority = -1)
-	public void login()
-	{
-		System.out.println("Login to the application");
-	}
+public class ReporterClassUsage {
 	
 	
-	@Test(priority = -1)
+	@Test
 	public void home()
 	{
 		System.out.println("Home page of application");
+		Reporter.log("Home Test case", true);
 	}
 	
-	@Test(priority = 3)
+	@Test
 	public void dashBoard()
 	{
 		System.out.println("Dashboard of application");
+		Reporter.log("Dashboard Test case", false);
 	}
 	
-	@Test(priority = 1000)
+	@Test
 	public void logout()
 	{
 		System.out.println("Logout from the application");
-	}
+		Reporter.log("Logout Test case", true);
+		
 	
-
-	@Test
-	public void profile()
-	{
-		System.out.println("Profile of an application");
 	}
-	
 
 }

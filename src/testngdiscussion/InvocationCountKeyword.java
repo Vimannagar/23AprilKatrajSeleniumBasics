@@ -2,39 +2,30 @@ package testngdiscussion;
 
 import org.testng.annotations.Test;
 
-public class Priority {
+public class InvocationCountKeyword {
 	
-	@Test(priority = -1)
-	public void login()
+	@Test(invocationCount = 5, priority = 1)
+	public void title()
 	{
-		System.out.println("Login to the application");
+		System.out.println("Title test case ");
 	}
 	
-	
-	@Test(priority = -1)
+	@Test
 	public void home()
 	{
 		System.out.println("Home page of application");
 	}
 	
-	@Test(priority = 3)
+	@Test
 	public void dashBoard()
 	{
 		System.out.println("Dashboard of application");
 	}
 	
-	@Test(priority = 1000)
+	@Test
 	public void logout()
 	{
 		System.out.println("Logout from the application");
 	}
-	
-
-	@Test
-	public void profile()
-	{
-		System.out.println("Profile of an application");
-	}
-	
 
 }
