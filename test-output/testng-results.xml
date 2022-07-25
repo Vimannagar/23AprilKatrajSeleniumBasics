@@ -2,30 +2,62 @@
 <testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-07-23T20:04:54 IST" name="Suite" finished-at="2022-07-23T20:04:54 IST" duration-ms="173">
+  <suite started-at="2022-07-25T09:00:12 IST" name="Suite" finished-at="2022-07-25T09:00:13 IST" duration-ms="151">
     <groups>
     </groups>
-    <test started-at="2022-07-23T20:04:54 IST" name="Test" finished-at="2022-07-23T20:04:54 IST" duration-ms="173">
-      <class name="testngdiscussion.DashBoardTest">
-        <test-method signature="adminTab()[pri:0, instance:testngdiscussion.DashBoardTest@4dbb42b7]" started-at="2022-07-23T20:04:54 IST" name="adminTab" finished-at="2022-07-23T20:04:54 IST" duration-ms="9" status="PASS">
+    <test started-at="2022-07-25T09:00:12 IST" name="Test" finished-at="2022-07-25T09:00:13 IST" duration-ms="151">
+      <class name="testngdiscussion.Annotations2">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:testngdiscussion.Annotations2@576d5deb]" started-at="2022-07-25T09:00:12 IST" name="beforeTest" finished-at="2022-07-25T09:00:12 IST" duration-ms="13" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- adminTab -->
-        <test-method signature="profileTab()[pri:0, instance:testngdiscussion.DashBoardTest@4dbb42b7]" started-at="2022-07-23T20:04:54 IST" name="profileTab" finished-at="2022-07-23T20:04:54 IST" duration-ms="8" status="PASS">
+        </test-method> <!-- beforeTest -->
+        <test-method signature="dashBoard()[pri:0, instance:testngdiscussion.Annotations2@576d5deb]" started-at="2022-07-25T09:00:13 IST" name="dashBoard" finished-at="2022-07-25T09:00:13 IST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- profileTab -->
-      </class> <!-- testngdiscussion.DashBoardTest -->
-      <class name="testngdiscussion.LoginTest">
-        <test-method signature="loginWithCorrectCreds()[pri:0, instance:testngdiscussion.LoginTest@d5b810e]" started-at="2022-07-23T20:04:54 IST" name="loginWithCorrectCreds" finished-at="2022-07-23T20:04:54 IST" duration-ms="20" status="PASS">
+        </test-method> <!-- dashBoard -->
+        <test-method signature="home()[pri:0, instance:testngdiscussion.Annotations2@576d5deb]" started-at="2022-07-25T09:00:13 IST" name="home" finished-at="2022-07-25T09:00:13 IST" duration-ms="3" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginWithCorrectCreds -->
-        <test-method signature="verifyTitle()[pri:0, instance:testngdiscussion.LoginTest@d5b810e]" started-at="2022-07-23T20:04:54 IST" name="verifyTitle" finished-at="2022-07-23T20:04:54 IST" duration-ms="5" status="PASS">
+        </test-method> <!-- home -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:testngdiscussion.Annotations2@576d5deb]" started-at="2022-07-25T09:00:13 IST" name="afterTest" finished-at="2022-07-25T09:00:13 IST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyTitle -->
-      </class> <!-- testngdiscussion.LoginTest -->
+        </test-method> <!-- afterTest -->
+      </class> <!-- testngdiscussion.Annotations2 -->
+      <class name="testngdiscussion.Annotations">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:testngdiscussion.Annotations@942a29c]" started-at="2022-07-25T09:00:12 IST" name="beforeClass" finished-at="2022-07-25T09:00:12 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:testngdiscussion.Annotations@942a29c]" started-at="2022-07-25T09:00:12 IST" name="beforeMethod" finished-at="2022-07-25T09:00:12 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="checkBoxTest()[pri:0, instance:testngdiscussion.Annotations@942a29c]" started-at="2022-07-25T09:00:13 IST" name="checkBoxTest" finished-at="2022-07-25T09:00:13 IST" duration-ms="15" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkBoxTest -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testngdiscussion.Annotations@942a29c]" started-at="2022-07-25T09:00:13 IST" name="afterMethod" finished-at="2022-07-25T09:00:13 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:testngdiscussion.Annotations@942a29c]" started-at="2022-07-25T09:00:13 IST" name="beforeMethod" finished-at="2022-07-25T09:00:13 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="profile()[pri:0, instance:testngdiscussion.Annotations@942a29c]" started-at="2022-07-25T09:00:13 IST" name="profile" finished-at="2022-07-25T09:00:13 IST" duration-ms="6" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- profile -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testngdiscussion.Annotations@942a29c]" started-at="2022-07-25T09:00:13 IST" name="afterMethod" finished-at="2022-07-25T09:00:13 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:testngdiscussion.Annotations@942a29c]" started-at="2022-07-25T09:00:13 IST" name="afterClass" finished-at="2022-07-25T09:00:13 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- testngdiscussion.Annotations -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>
