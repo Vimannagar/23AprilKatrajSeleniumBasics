@@ -3,14 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testngdiscussion.DependsOnMethodKeyword">
+      <class name="testngdiscussion.AlwaysRunKeyword">
         <methods>
-          <include name="logout"/>
-          <include name="enteringCredentials"/>
           <include name="navToUrl"/>
           <include name="clickOnLoginButton"/>
+          <include name="enteringCredentials"/>
         </methods>
-      </class> <!-- testngdiscussion.DependsOnMethodKeyword -->
+      </class> <!-- testngdiscussion.AlwaysRunKeyword -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
