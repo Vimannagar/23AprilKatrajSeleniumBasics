@@ -4,10 +4,11 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class AmazonListenersTest {
-	WebDriver driver;
+	static WebDriver driver;
 	
 	WebDriverWait wait;
 	
@@ -30,10 +31,17 @@ public class AmazonListenersTest {
 		driver.findElement(By.xpath("//*[@id='twotabsearchtextbox']")).sendKeys("Mobile Phone");
 		
 		driver.findElement(By.xpath("//*[@id='nav-search-submit-button']")).click();
+	
+		String actualtitle = driver.getTitle();
+		
+		String expectedtitle = "Amazon.in : mobilephone";
+		
+		
+		Assert.assertEquals(actualtitle, expectedtitle);
 	}
 	
 	
-	@Test(priority = 3)
+	@Test(priority = 3, dependsOnMethods = "searchTest")
 	public void clickOnProduct()
 	{
 		driver.findElement(By.xpath("//*[@data-asin='B097YL5C2G']//*[@class='a-size-medium a-color-base a-text-normal']")).click();

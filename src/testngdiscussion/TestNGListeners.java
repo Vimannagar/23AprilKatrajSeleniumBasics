@@ -1,10 +1,14 @@
 package testngdiscussion;
 
+import java.io.IOException;
+
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
 
-public class TestNGListeners implements ITestListener {
+import utility.ScreenShot;
+
+public class TestNGListeners extends AmazonListenersTest implements ITestListener {
 
 	@Override
 	public void onTestStart(ITestResult result) {
@@ -21,6 +25,15 @@ public class TestNGListeners implements ITestListener {
 	@Override
 	public void onTestFailure(ITestResult result) {
 		System.out.println("Test case :"+result.getMethod().getMethodName()+" has been  failed");	
+	
+		try {
+			ScreenShot.captureScreenShot(driver, result.getMethod().getMethodName());
+		} 
+		catch (IOException e)
+		{
+			System.out.println("Exception arrived catch is executing");
+		}
+	
 	}
 
 	@Override
