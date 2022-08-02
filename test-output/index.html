@@ -51,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
-                    <span>F:\Desktop\VimanNagar\May 21\23AprSeleniumBasics\ParallelTestCaseExecutiontestng.xml</span>
+                    <span>F:\Desktop\VimanNagar\May 21\23AprSeleniumBasics\Parameterization2testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -104,12 +104,12 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="testngdiscussion.ParallelTestCaseExecution" class="method navigator-link" hash-for-method="launchChrome">launchChrome</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="testngdiscussion.Parameterization2" class="method navigator-link" hash-for-method="launchURL(firefox)">launchURL(firefox)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="testngdiscussion.ParallelTestCaseExecution" class="method navigator-link" hash-for-method="launchFirefox">launchFirefox</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="testngdiscussion.Parameterization2" class="method navigator-link" hash-for-method="searchMobile">searchMobile</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -127,21 +127,22 @@
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">testngdiscussion.ParallelTestCaseExecution</span>
+              <span class="class-name">testngdiscussion.Parameterization2</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="launchChrome">
-                  </a> <!-- launchChrome -->
-                  <span class="method-name">launchChrome</span>
+                  <a name="launchURL(firefox)">
+                  </a> <!-- launchURL(firefox) -->
+                  <span class="method-name">launchURL</span>
+                  <span class="parameters">(firefox)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="launchFirefox">
-                  </a> <!-- launchFirefox -->
-                  <span class="method-name">launchFirefox</span>
+                  <a name="searchMobile">
+                  </a> <!-- searchMobile -->
+                  <span class="method-name">searchMobile</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -149,16 +150,17 @@
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">F:\Desktop\VimanNagar\May 21\23AprSeleniumBasics\ParallelTestCaseExecutiontestng.xml</span>
+            <span class="header-content">F:\Desktop\VimanNagar\May 21\23AprSeleniumBasics\Parameterization2testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
-  &lt;test thread-count=&quot;5&quot; parallel=&quot;methods&quot; name=&quot;Test&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;firefox&quot;/&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;testngdiscussion.ParallelTestCaseExecution&quot;/&gt;
+      &lt;class name=&quot;testngdiscussion.Parameterization2&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -200,18 +202,18 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(2);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'launchFirefox')
-data.setCell(0, 2, 'testngdiscussion.ParallelTestCaseExecution')
-data.setCell(0, 3, 13194);
+data.setCell(0, 1, 'launchURL')
+data.setCell(0, 2, 'testngdiscussion.Parameterization2')
+data.setCell(0, 3, 12294);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'launchChrome')
-data.setCell(1, 2, 'testngdiscussion.ParallelTestCaseExecution')
-data.setCell(1, 3, 9752);
+data.setCell(1, 1, 'searchMobile')
+data.setCell(1, 2, 'testngdiscussion.Parameterization2')
+data.setCell(1, 3, 4407);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 22 seconds</span>
+              <span class="suite-total-time">Total running time: 16 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -237,14 +239,14 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">testngdiscussion.ParallelTestCaseExecution</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">testngdiscussion.Parameterization2</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">launchFirefox</span>
+                <span class="method-name">launchURL(firefox)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">launchChrome</span>
-                <span class="method-start">0 ms</span>
+                <span class="method-name">searchMobile</span>
+                <span class="method-start">12333 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

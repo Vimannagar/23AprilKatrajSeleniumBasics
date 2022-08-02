@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" parallel="methods" name="Test(failed)">
+  <test thread-count="5" name="Test(failed)">
+    <parameter name="browser" value="Chrome"/>
     <classes>
-      <class name="testngdiscussion.ParallelTestCaseExecution">
+      <class name="testngdiscussion.Parameterization2">
         <methods>
-          <include name="launchFirefox"/>
+          <include name="searchMobile"/>
         </methods>
-      </class> <!-- testngdiscussion.ParallelTestCaseExecution -->
+      </class> <!-- testngdiscussion.Parameterization2 -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

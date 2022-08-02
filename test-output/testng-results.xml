@@ -2,20 +2,27 @@
 <testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-08-01T08:54:27 IST" name="Suite" finished-at="2022-08-01T08:54:40 IST" duration-ms="13339">
+  <suite started-at="2022-08-02T08:48:16 IST" name="Suite" finished-at="2022-08-02T08:48:33 IST" duration-ms="16837">
     <groups>
     </groups>
-    <test started-at="2022-08-01T08:54:27 IST" name="Test" finished-at="2022-08-01T08:54:40 IST" duration-ms="13339">
-      <class name="testngdiscussion.ParallelTestCaseExecution">
-        <test-method signature="launchFirefox()[pri:0, instance:testngdiscussion.ParallelTestCaseExecution@485966cc]" started-at="2022-08-01T08:54:27 IST" name="launchFirefox" finished-at="2022-08-01T08:54:40 IST" duration-ms="13194" status="PASS">
+    <test started-at="2022-08-02T08:48:16 IST" name="Test" finished-at="2022-08-02T08:48:33 IST" duration-ms="16837">
+      <class name="testngdiscussion.Parameterization2">
+        <test-method signature="launchURL(java.lang.String)[pri:0, instance:testngdiscussion.Parameterization2@5b03b9fe]" started-at="2022-08-02T08:48:16 IST" name="launchURL" finished-at="2022-08-02T08:48:28 IST" duration-ms="12294" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- launchFirefox -->
-        <test-method signature="launchChrome()[pri:0, instance:testngdiscussion.ParallelTestCaseExecution@485966cc]" started-at="2022-08-01T08:54:27 IST" name="launchChrome" finished-at="2022-08-01T08:54:36 IST" duration-ms="9752" status="PASS">
+        </test-method> <!-- launchURL -->
+        <test-method signature="searchMobile()[pri:0, instance:testngdiscussion.Parameterization2@5b03b9fe]" started-at="2022-08-02T08:48:28 IST" name="searchMobile" finished-at="2022-08-02T08:48:33 IST" duration-ms="4407" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- launchChrome -->
-      </class> <!-- testngdiscussion.ParallelTestCaseExecution -->
+        </test-method> <!-- searchMobile -->
+      </class> <!-- testngdiscussion.Parameterization2 -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>
