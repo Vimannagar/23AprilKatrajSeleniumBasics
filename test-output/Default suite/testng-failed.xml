@@ -3,12 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testngdiscussion.AmazonListenersTest2">
+      <class name="testngdiscussion.AmazonListenersTest">
         <methods>
-          <include name="clickOnProduct"/>
-          <include name="searchTest"/>
+          <include name="clickOnProductAndAdd"/>
         </methods>
-      </class> <!-- testngdiscussion.AmazonListenersTest2 -->
+      </class> <!-- testngdiscussion.AmazonListenersTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
