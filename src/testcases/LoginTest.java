@@ -4,17 +4,17 @@ import org.testng.annotations.Test;
 
 public class LoginTest extends BaseTest {
 
-	@Test
+	@Test(priority = 1)
 	public void validateLogin() {
 
-		lp.loginToApplication();
-		lp.enterPin();
+		lpa.loginToApplication();
+		lpa.enterPin();
 
 	}
 
-	@Test
+	@Test(priority = 2)
 	public void validateTitle() {
-		lp.titleOfPage();
+		lpa.titleOfPage();
 	}
 
 }

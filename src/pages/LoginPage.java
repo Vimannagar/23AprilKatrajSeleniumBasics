@@ -13,6 +13,7 @@ public class LoginPage {
 	}
 
 	public void loginToApplication() {
+		
 		driver.findElement(By.xpath("//*[@id='userid']")).sendKeys("DAA677");
 
 		driver.findElement(By.xpath("//*[@id='password']")).sendKeys("Velocity@123");
@@ -30,6 +31,7 @@ public class LoginPage {
 		String title = driver.getTitle();
 
 		System.out.println(title);
+	
 	}
 
 }
